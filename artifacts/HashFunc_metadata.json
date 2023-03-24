@@ -1,0 +1,147 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "text1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "text2",
+						"type": "string"
+					}
+				],
+				"name": "abiEncode",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "res",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "text1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "text2",
+						"type": "string"
+					}
+				],
+				"name": "abiEncodePacked",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "res",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "text1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "text2",
+						"type": "string"
+					}
+				],
+				"name": "collision",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "res",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "text",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "hash",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Keccak256.sol": "HashFunc"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Keccak256.sol": {
+			"keccak256": "0xaa2356addb8211d4c27ff5dea0b4dd05c376e2476d44a26dd90074402bed0f09",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a5c5b9cd474b857eeab6e69b014443e73207626d0d8ee25102949bc4c68fd4a4",
+				"dweb:/ipfs/QmX4aeCJA4Vs2Soi5vrLTqF2UWeinULgVsivsWctEdaHEs"
+			]
+		}
+	},
+	"version": 1
+}
