@@ -13,3 +13,16 @@ contract Kill{
         return 123;
     }
 }
+
+contract Helper{
+
+    function getBal() external view returns(uint){
+        return address(this).balance;
+    }
+    
+    function destroyContract(Kill kill) external{
+        kill.kill();
+    }
+
+    fallback() external payable{}
+}

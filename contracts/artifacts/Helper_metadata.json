@@ -6,20 +6,25 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
 				"stateMutability": "payable",
-				"type": "constructor"
+				"type": "fallback"
 			},
 			{
-				"inputs": [],
-				"name": "kill",
+				"inputs": [
+					{
+						"internalType": "contract Kill",
+						"name": "kill",
+						"type": "address"
+					}
+				],
+				"name": "destroyContract",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "testCall",
+				"name": "getBal",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -27,7 +32,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -44,7 +49,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Deleting.sol": "Kill"
+			"contracts/Deleting.sol": "Helper"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
