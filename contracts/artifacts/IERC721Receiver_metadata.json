@@ -9,22 +9,33 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_from",
+						"name": "operator",
 						"type": "address"
 					},
 					{
 						"internalType": "address",
-						"name": "_to",
+						"name": "from",
 						"type": "address"
 					},
 					{
 						"internalType": "uint256",
-						"name": "_nftId",
+						"name": "tokenId",
 						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
 					}
 				],
-				"name": "transferFrom",
-				"outputs": [],
+				"name": "onERC721Received",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -42,7 +53,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/DutchAction.sol": "IERC20"
+			"contracts/ERC721.sol": "IERC721Receiver"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -56,12 +67,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/DutchAction.sol": {
-			"keccak256": "0x83b1546efb4a97c71961e0903e9cefbf5458b749dde6080e6fc1a83678ef35b4",
+		"contracts/ERC721.sol": {
+			"keccak256": "0x8c680e46f47f788aba6385ddfebe032f5217223d75145e868c5c6899872a0238",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://73fb0620ef3cb914c8b087dcae7b92841a64ae364cee898afa83cfa5afa3c22b",
-				"dweb:/ipfs/QmPZM8yGZHPHY9mNBM5dBYqmU7TE9hJWq5sZjUAHjSPRij"
+				"bzz-raw://0e75838e546daf8502e12eda99a09f25b58f74dda11a60dbde0a2c960081a75f",
+				"dweb:/ipfs/QmeWknovwQG9roXY1rd8CAe2dS3iE1kZqxUzsyEBr74QTE"
 			]
 		}
 	},

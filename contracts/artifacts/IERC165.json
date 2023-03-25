@@ -49,31 +49,27 @@
 		},
 		"gasEstimates": null,
 		"methodIdentifiers": {
-			"transferFrom(address,address,uint256)": "23b872dd"
+			"supportsInterface(bytes4)": "01ffc9a7"
 		}
 	},
 	"abi": [
 		{
 			"inputs": [
 				{
-					"internalType": "address",
-					"name": "_from",
-					"type": "address"
-				},
-				{
-					"internalType": "address",
-					"name": "_to",
-					"type": "address"
-				},
-				{
-					"internalType": "uint256",
-					"name": "_nftId",
-					"type": "uint256"
+					"internalType": "bytes4",
+					"name": "interfaceID",
+					"type": "bytes4"
 				}
 			],
-			"name": "transferFrom",
-			"outputs": [],
-			"stateMutability": "nonpayable",
+			"name": "supportsInterface",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "view",
 			"type": "function"
 		}
 	]
