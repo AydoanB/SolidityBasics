@@ -1,0 +1,57 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Create2.sol": "TesContract"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Create2.sol": {
+			"keccak256": "0x6b99e3e7b8c9bcb2080a7a2817cbcc1c254fa1bbbc0b4ed553441544df6f24f7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://199bff8c4933cc7e1f4d617c750048764bab14f36df535739bab09c3a4562f4e",
+				"dweb:/ipfs/Qma4maz1utxueEVkFQHUsan7MjkTSpuQRvzfJ54kCmYewL"
+			]
+		}
+	},
+	"version": 1
+}
