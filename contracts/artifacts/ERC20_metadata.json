@@ -1,10 +1,35 @@
 {
 	"compiler": {
-		"version": "0.8.18+commit.87f61d96"
+		"version": "0.8.19+commit.7dd6d404"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
 			{
 				"anonymous": false,
 				"inputs": [
@@ -282,11 +307,19 @@
 	},
 	"sources": {
 		"contracts/ERC20.sol": {
-			"keccak256": "0x09dfd10dbd0ae38a4291a9fb8f71d1c95bf86be76f7cb25ccce0f796bf3e0f31",
+			"keccak256": "0x9a82850505f3f6e49aec8fe9f6771d9c228160b53efb92030f293f09163a9d51",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1bd4a15478990afae14952d9cc2fec14927181625d755b37b27d639c46630486",
-				"dweb:/ipfs/QmQd5dTaqu4qSRuijJ1TWsnUPLu97PMWZohiq4aFYAMe1f"
+				"bzz-raw://e2233e664bb5617611f5db7d6bb310b2b0f419ac696a67020a6481a78919eb71",
+				"dweb:/ipfs/QmVGFeuVSa4gTbGpLQSSWUcdahN82wMTARz5kd4cLmQLCK"
+			]
+		},
+		"contracts/IERC20.sol": {
+			"keccak256": "0xb6da032305623902a3e269c46f11fe79b692cf6d0bf05ee106e1a1c049f6a0aa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3d80c435481d4928895055ae5296b4ef53b2c3496f2c9814c3cfff5115d133b9",
+				"dweb:/ipfs/QmbqVeyYP61juhJDKmPhSDv242ix126TAPZd5rPmYwkHy1"
 			]
 		}
 	},
